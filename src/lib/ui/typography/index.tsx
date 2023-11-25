@@ -1,5 +1,5 @@
+import { FontSize, FontWeight, GeneralColors } from "@/lib/theme";
 import styled, { css } from "styled-components";
-import { FontSize, FontWeight, GeneralColors } from "../theme";
 
 interface ErrorProps {
   size?: FontSize;
@@ -47,7 +47,7 @@ export const P = styled.p<PProps>`
   font-weight: ${(p) => (p.weight ? p.theme.font.weight[p.weight] : p.theme.font.weight.normal)};
 `;
 
-export const Text = styled.div<PProps>`
+export const Typography = styled.div<PProps>`
   display: inline-block;
   margin: 0;
   color: ${(p) => (p.color ? p.theme.colors.general[p.color] : p.theme.colors.general.text)};
